@@ -3,7 +3,7 @@
     --cor-de-fundo: #1e1e1e;
     --verde: #6fff57;
     --branco: #ffffff;
-    --botao-ativo: #3a375e;
+    --botao-ativo: #2c1dcf;
     --botao-inativo: rgba(58, 55, 94, 0.5);
     --texto-de-fundo: rgba(58, 55, 94, 0.3);
 }
@@ -35,7 +35,7 @@ body{
 
 .botao{
     font-family: 'Chakra Petch', sans-serif;
-    background-color: var(--botao-inativo);
+    background-color: rgb(22, 22, 21);
     color: var(--branco);
     display: flex;
     justify-content: center;
@@ -48,6 +48,7 @@ body{
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
+
 .botao:first-child{
     border-radius: 40px 40px 0 0;
 }
@@ -55,6 +56,7 @@ body{
 .botoes{
     display: block;
 }
+
 @media screen and (min-width: 768px) {
     .botoes{
         display: flex;
@@ -64,19 +66,18 @@ body{
         border-radius: 40px 0 0 0;
     }
 
-.botao:last-child{
-    border-radius: 0 40px 0 0;
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
     }
 }
 
-
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom:4px solid salmon;
 }
 
 .abas-textos{
-    background-color: var(--texto-de-fundo);
+    background-color: rgb(22, 22, 21);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
@@ -92,10 +93,34 @@ body{
 .aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
+    color:rgba(211, 214, 46, 0.897);
 }
 
 .aba-conteudo-titulo-secundario{
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
+}
+
+.contador{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    font-size: 20px;
+    margin: 0;
+    color: tomato;
 }
